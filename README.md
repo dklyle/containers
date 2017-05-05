@@ -3,7 +3,7 @@
 Sample container runtime specs for use with [runc] forked from
 [jessfraz/containers].  Changes include supporting changes in the
 [OCI runtime-spec] and adding examples of [rootless] containers. There
-are hooks 
+are prestart hooks to configure networking properly leveraging [netns]. 
 
 ## use with runc
 To run any of these, you will first need to populate the `rootfs` for each
