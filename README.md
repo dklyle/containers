@@ -17,7 +17,7 @@ runc run irssi
 For rootless containers, you will need to specify the --root directory where the
 container state will be stored.
 ```
-runc --root /tmp irssi
+runc --root /tmp/runc irssi
 ```
 
 [runc]:https://github.com/opencontainers/runc
