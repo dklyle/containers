@@ -1,11 +1,14 @@
 # containers
 
-Sample containers forked from [jessfraz/containers]. Changes are updating to
-support changes in the [OCI runtime-spec] and adding examples of [rootless]
-containers.
+Sample container runtime specs for use with [runc] forked from
+[jessfraz/containers].  Changes include supporting changes in the
+[OCI runtime-spec] and adding examples of [rootless] containers. There
+are hooks 
 
-To test any of these, you will first need to populate the rootfs for the
-containers. See the OCI runtime-spec [README] for detailed instructions.
+## use with runc
+To run any of these, you will first need to populate the `rootfs` for each
+container you wish to run. See the OCI runtime-spec [README] for detailed
+instructions on how to accomplish this.
 
 ```
 runc run irssi
@@ -17,7 +20,9 @@ container state will be stored.
 runc --root /tmp irssi
 ```
 
+[runc]:https://github.com/opencontainers/runc
 [jessfraz/containers]:https://github.com/jessfraz/containers
 [OCI runtime-spec]:https://github.com/opencontainers/runtime-spec
 [rootless]:https://www.cyphar.com/blog/post/rootless-containers-with-runc
 [README]:https://github.com/opencontainers/runtime-spec/README.md
+[netns]:https://github.com/jessfraz/netns
